@@ -21,7 +21,7 @@ def build_corpus():
         meta, chunks = read_pdf_to_chunks(path, dt, title, extra)
         metas.append(meta); chunks_all.extend(chunks)
 
-    idx = HybridIndex(model_name="BAAI/bge-m3")
+    idx = HybridIndex(model_name="BAAI/bge-small-en-v1.5")
     idx.build(metas, chunks_all)
     return idx
 
