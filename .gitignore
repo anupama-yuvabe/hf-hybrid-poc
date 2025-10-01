@@ -3,7 +3,6 @@ __pycache__/
 *.pyc
 store/*
 !store/.gitkeep
-data/*
 !data/.gitkeep
 .faiss*
 .DS_Store
