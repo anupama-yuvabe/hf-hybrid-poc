@@ -8,7 +8,7 @@ from .models import Chunk, DocMeta
 _word_re = re.compile(r"\w+(\.\w+)?")
 
 class HybridIndex:
-    def __init__(self, model_name="sentence-transformers/all-MiniLM-L6-v2"):
+    def __init__(self, model_name="BAAI/bge-small-en-v1.5"):
         self.embedder = SentenceTransformer(model_name)  # CPU ok on HF
         self.faiss_index = None
         self.vecs = None
